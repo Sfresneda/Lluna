@@ -48,7 +48,7 @@ Future Improvements
 
 DEMO
 -----------------------------
-![Demo](assets/demo.gif)
+![Demo](assets/demo.GIF)
 
 
 Contact
