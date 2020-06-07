@@ -155,6 +155,10 @@ extension CameraViewController: CameraViewContract {}
 
 // MARK: - CameraARViewDelegate
 extension CameraViewController: CameraARViewDelegate {
+    func showMessageError(with content: String) {
+        self.showError(with: content, acceptHandler: nil)
+    }
+    
     func moonInOnScene() {
         self.changeAnimationModeButtonEnabledState()
         self.showAnimationIndicator(with: self.changeAnimationButton.mode.title)
@@ -163,6 +167,7 @@ extension CameraViewController: CameraARViewDelegate {
     func moonTouched() {
         let detailView = DetailViewController.init()
         detailView.modalPresentationStyle = .pageSheet
+        
         self.present(detailView, animated: true, completion: nil)
     }
 }

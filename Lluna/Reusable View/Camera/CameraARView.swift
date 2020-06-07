@@ -13,6 +13,7 @@ import ARKit
 protocol CameraARViewDelegate {
     func moonInOnScene()
     func moonTouched()
+    func showMessageError(with message: String)
 }
 
 protocol CameraARViewContract: UIView {
@@ -72,9 +73,14 @@ extension CameraARView: CameraARViewContract {
 }
 
 extension CameraARView: LlunaSceneDelegate {
+    func showError(with message: String) {
+        self.delegate?.showMessageError(with: message)
+    }
+    
     func moonTouched() {
         self.delegate?.moonTouched()
     }
+    
 }
 
 // MARK: - ARSKViewDelegate

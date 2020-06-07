@@ -11,6 +11,7 @@ import ARKit
 
 protocol LlunaSceneDelegate {
     func moonTouched()
+    func showError(with message: String)
 }
 
 protocol LlunaSceneContract: ARSCNView {
@@ -65,7 +66,8 @@ class LlunaScene: ARSCNView {
     // MARK: - Setup
     private func commonSetup() {
         guard ARWorldTrackingConfiguration.isSupported else {
-            fatalError("AR is not supported on this device")
+            self.moonDelegate?.showError(with: "AR is not supported on this device")
+            return
         }
 
         self.sessionConfig = ARWorldTrackingConfiguration()
@@ -100,21 +102,16 @@ class LlunaScene: ARSCNView {
     }
     
     private func handleMultiTouch(_ touches: Set<UITouch>) {
-        guard let currentPosition = self.moonNode?.position else {
-            return
-        }
-        self.moonNode?.position = SCNVector3.init(currentPosition.x + 0.1,
-                                                  currentPosition.y,
-                                                  currentPosition.z)
+        // do something with multi touch events
     }
 }
 
 // MARK: - Contract
 extension LlunaScene: LlunaSceneContract {
     func createPlaneNode(anchor: ARPlaneAnchor) -> SCNNode {
-        let width = anchor.extent.x;
-        let length = anchor.extent.z;
-        let planeHeight = 0.01;
+        let width = anchor.extent.x
+        let length = anchor.extent.z
+        let planeHeight = 0.01
         let planeGeometry = SCNBox.init(width: CGFloat(width),
                                         height: CGFloat(planeHeight),
                                         length: CGFloat(length),

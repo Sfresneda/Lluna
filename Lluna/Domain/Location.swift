@@ -27,32 +27,3 @@ struct Location: Codable {
         case longitude = "longitude"
     }
 }
-/*
-{
-    "location": {
-        "ip": "31.221.180.166",
-        "country_code2": "ES",
-        "country_code3": "ESP",
-        "country_name": "Spain",
-        "state_prov": "Community of Madrid",
-        "district": "Arroyo de la Vega",
-        "city": "Alcobendas",
-        "zipcode": "28108",
-        "latitude": 40.5339,
-        "longitude": -3.6312
-    },
-    "date": "2020-06-06",
-    "sunrise": "06:44",
-    "sunset": "21:43",
-    "solar_noon": "14:14",
-    "day_length": "14:59",
-    "sun_altitude": 59.41049470997526,
-    "sun_distance": 1.5178112164792225E8,
-    "sun_azimuth": 116.60982978672155,
-    "moonrise": "22:43",
-    "moonset": "08:06",
-    "moon_altitude": -53.16126453885743,
-    "moon_distance": 376162.0186877597,
-    "moon_azimuth": 286.7184981515819,
-    "moon_parallactic_angle": 20.9237361817968
-}*/

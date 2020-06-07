@@ -78,7 +78,8 @@ class PermissionCardView: UIView {
         self.layer.cornerRadius = 20
         self.clipsToBounds = true
         
-        self.backgroundPlaceholderImageView.image = UIImage.init(systemName: model?.symbolName ?? "")?.withTintColor(UIColor.lightBlueGrayVlv, renderingMode: .alwaysOriginal)
+        self.backgroundPlaceholderImageView.image = UIImage.init(systemName: model?.symbolName ?? "")?
+            .withTintColor(UIColor.lightBlueGrayVlv, renderingMode: .alwaysOriginal)
         self.backgroundPlaceholderImageView.alpha = 0.6
         
         self.cardTitleLabel.text = self.model?.title

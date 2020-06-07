@@ -40,7 +40,7 @@ extension LocationManager: LocationManagerWrapper {
         
         CLGeocoder().reverseGeocodeLocation(userLocation) { (placemarks, error) in
             guard let placemark = placemarks?.first else {
-                debugPrint(" ⚠️🌎Unable to reverse geocode \(String(describing: error?.localizedDescription))")
+                debugPrint("⚠️🌎 Unable to reverse geocode \(String(describing: error?.localizedDescription))")
                 return
             }
 

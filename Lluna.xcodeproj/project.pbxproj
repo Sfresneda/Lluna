@@ -39,6 +39,7 @@
 		E8DBB3152486C55800309C06 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBB3142486C55800309C06 /* UIColor.swift */; };
 		E8DBB31B2486C69E00309C06 /* PermissionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBB31A2486C69E00309C06 /* PermissionCardView.swift */; };
 		E8DBB31D2486C6F200309C06 /* PermissionCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DBB31C2486C6F200309C06 /* PermissionCardView.xib */; };
+		E8E7A446248D69DA00A24D3D /* detail_view.png in Resources */ = {isa = PBXBuildFile; fileRef = E8E7A445248D69DA00A24D3D /* detail_view.png */; };
 		E8EA5F222486C9980004F071 /* LlunaPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5F212486C9980004F071 /* LlunaPermissions.swift */; };
 		E8EA5F252486CCF20004F071 /* UIVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5F242486CCF20004F071 /* UIVIew.swift */; };
 		E8F9D1672489698400DED109 /* LlunaScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F9D1662489698400DED109 /* LlunaScene.swift */; };
@@ -80,6 +81,7 @@
 		E8DBB3142486C55800309C06 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		E8DBB31A2486C69E00309C06 /* PermissionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionCardView.swift; sourceTree = "<group>"; };
 		E8DBB31C2486C6F200309C06 /* PermissionCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionCardView.xib; sourceTree = "<group>"; };
+		E8E7A445248D69DA00A24D3D /* detail_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail_view.png; sourceTree = "<group>"; };
 		E8EA5F212486C9980004F071 /* LlunaPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LlunaPermissions.swift; sourceTree = "<group>"; };
 		E8EA5F242486CCF20004F071 /* UIVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIew.swift; sourceTree = "<group>"; };
 		E8F9D1662489698400DED109 /* LlunaScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LlunaScene.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 		E88813C9248D191300F1E7AD /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				E8E7A445248D69DA00A24D3D /* detail_view.png */,
 				E88813CA248D249F00F1E7AD /* ic_lluna_logo.png */,
 				E88813CC248D257500F1E7AD /* demo.GIF */,
 			);
@@ -430,6 +433,7 @@
 				E88813C8248D0FFA00F1E7AD /* README.md in Resources */,
 				E8DBB30E2486C3F000309C06 /* WalkthroughViewController.xib in Resources */,
 				E88813CD248D257500F1E7AD /* demo.GIF in Resources */,
+				E8E7A446248D69DA00A24D3D /* detail_view.png in Resources */,
 				E8DBB2FD2486C27300309C06 /* Assets.xcassets in Resources */,
 				E81583F224882301000852F4 /* CameraViewController.xib in Resources */,
 			);

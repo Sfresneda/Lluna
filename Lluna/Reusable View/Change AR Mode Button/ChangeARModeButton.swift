@@ -29,8 +29,7 @@ class ChangeARModeButton: UIButton {
     var nextMode: MoonAnimationMode {
         return self.mode == .fixed ? .rotate : .fixed
     }
-        
-        
+          
     override var isEnabled: Bool {
         didSet {
             UIView.animate(withDuration: 0.2) {
