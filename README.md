@@ -45,11 +45,7 @@ In [Valencian](https://en.wikipedia.org/wiki/Valencian_language) (_my native lan
 ## DEMO
 -----------------------------
 ![Demo](assets/demo.GIF)
-<<<<<<< HEAD
 ![Detail view](assets/detail_view.png)
-=======
-
->>>>>>> d627b69a482b5919671c75dda869412e590de73b
 
 ## Contact
 -----------------------------
