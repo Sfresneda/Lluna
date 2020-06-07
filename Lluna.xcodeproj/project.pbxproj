@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E81583EC2488224F000852F4 /* CameraContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81583EB2488224F000852F4 /* CameraContract.swift */; };
+		E81583EE24882296000852F4 /* CameraViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81583ED24882296000852F4 /* CameraViewConfigurator.swift */; };
+		E81583F124882301000852F4 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81583EF24882301000852F4 /* CameraViewController.swift */; };
+		E81583F224882301000852F4 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E81583F024882301000852F4 /* CameraViewController.xib */; };
+		E81583F42488234F000852F4 /* CameraPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81583F32488234F000852F4 /* CameraPresenter.swift */; };
+		E8383DF62488BEEF0027BFB0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8383DF52488BEEF0027BFB0 /* BaseViewController.swift */; };
+		E83D2E8B248BA1FE0086D0B1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D2E89248BA1FE0086D0B1 /* DetailViewController.swift */; };
+		E83D2E8C248BA1FE0086D0B1 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83D2E8A248BA1FE0086D0B1 /* DetailViewController.xib */; };
+		E83D2E91248BA3040086D0B1 /* NetworkWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D2E90248BA3040086D0B1 /* NetworkWrapper.swift */; };
+		E83D2E93248BA30F0086D0B1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D2E92248BA30F0086D0B1 /* NetworkManager.swift */; };
+		E83D2E98248BA35B0086D0B1 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D2E97248BA35B0086D0B1 /* Location.swift */; };
+		E83D2E9A248BA36E0086D0B1 /* Astronomy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D2E99248BA36E0086D0B1 /* Astronomy.swift */; };
+		E83D2E9C248BA3CC0086D0B1 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D2E9B248BA3CC0086D0B1 /* NetworkConstants.swift */; };
+		E83D2EA0248BA61F0086D0B1 /* AstronomyNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D2E9F248BA61F0086D0B1 /* AstronomyNetworkProtocol.swift */; };
+		E83D2EA2248BA6420086D0B1 /* AstronomyNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D2EA1248BA6420086D0B1 /* AstronomyNetworkService.swift */; };
+		E87E6AC1248826BB00BCE5A6 /* CameraARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87E6AC0248826BB00BCE5A6 /* CameraARView.swift */; };
+		E88813C1248CDB8300F1E7AD /* LocationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88813C0248CDB8300F1E7AD /* LocationWrapper.swift */; };
+		E88813C4248CDBE600F1E7AD /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88813C3248CDBE600F1E7AD /* LocationManager.swift */; };
+		E88813C6248CF7C200F1E7AD /* AstronomyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88813C5248CF7C200F1E7AD /* AstronomyRequest.swift */; };
+		E88813C8248D0FFA00F1E7AD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E88813C7248D0FFA00F1E7AD /* README.md */; };
+		E88813CB248D249F00F1E7AD /* ic_lluna_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E88813CA248D249F00F1E7AD /* ic_lluna_logo.png */; };
+		E88813CD248D257500F1E7AD /* demo.GIF in Resources */ = {isa = PBXBuildFile; fileRef = E88813CC248D257500F1E7AD /* demo.GIF */; };
+		E8B366B7248828720027F2E2 /* ChangeARModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B366B6248828720027F2E2 /* ChangeARModeButton.swift */; };
+		E8DBB2F42486C27200309C06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBB2F32486C27200309C06 /* AppDelegate.swift */; };
+		E8DBB2F62486C27200309C06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBB2F52486C27200309C06 /* SceneDelegate.swift */; };
+		E8DBB2FD2486C27300309C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DBB2FC2486C27300309C06 /* Assets.xcassets */; };
+		E8DBB3002486C27300309C06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8DBB2FE2486C27300309C06 /* LaunchScreen.storyboard */; };
+		E8DBB30D2486C3F000309C06 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBB30B2486C3F000309C06 /* WalkthroughViewController.swift */; };
+		E8DBB30E2486C3F000309C06 /* WalkthroughViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DBB30C2486C3F000309C06 /* WalkthroughViewController.xib */; };
+		E8DBB3152486C55800309C06 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBB3142486C55800309C06 /* UIColor.swift */; };
+		E8DBB31B2486C69E00309C06 /* PermissionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBB31A2486C69E00309C06 /* PermissionCardView.swift */; };
+		E8DBB31D2486C6F200309C06 /* PermissionCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DBB31C2486C6F200309C06 /* PermissionCardView.xib */; };
+		E8EA5F222486C9980004F071 /* LlunaPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5F212486C9980004F071 /* LlunaPermissions.swift */; };
+		E8EA5F252486CCF20004F071 /* UIVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5F242486CCF20004F071 /* UIVIew.swift */; };
+		E8F9D1672489698400DED109 /* LlunaScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F9D1662489698400DED109 /* LlunaScene.swift */; };
+		E8F9D16F24896FE900DED109 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F9D16E24896FE900DED109 /* Moon.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E81583EB2488224F000852F4 /* CameraContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraContract.swift; sourceTree = "<group>"; };
+		E81583ED24882296000852F4 /* CameraViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewConfigurator.swift; sourceTree = "<group>"; };
+		E81583EF24882301000852F4 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		E81583F024882301000852F4 /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		E81583F32488234F000852F4 /* CameraPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPresenter.swift; sourceTree = "<group>"; };
+		E8383DF52488BEEF0027BFB0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E83D2E89248BA1FE0086D0B1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E83D2E8A248BA1FE0086D0B1 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		E83D2E90248BA3040086D0B1 /* NetworkWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWrapper.swift; sourceTree = "<group>"; };
+		E83D2E92248BA30F0086D0B1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E83D2E97248BA35B0086D0B1 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E83D2E99248BA36E0086D0B1 /* Astronomy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronomy.swift; sourceTree = "<group>"; };
+		E83D2E9B248BA3CC0086D0B1 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		E83D2E9F248BA61F0086D0B1 /* AstronomyNetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyNetworkProtocol.swift; sourceTree = "<group>"; };
+		E83D2EA1248BA6420086D0B1 /* AstronomyNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyNetworkService.swift; sourceTree = "<group>"; };
+		E87E6AC0248826BB00BCE5A6 /* CameraARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraARView.swift; sourceTree = "<group>"; };
+		E88813C0248CDB8300F1E7AD /* LocationWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWrapper.swift; sourceTree = "<group>"; };
+		E88813C3248CDBE600F1E7AD /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E88813C5248CF7C200F1E7AD /* AstronomyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyRequest.swift; sourceTree = "<group>"; };
+		E88813C7248D0FFA00F1E7AD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E88813CA248D249F00F1E7AD /* ic_lluna_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_lluna_logo.png; sourceTree = "<group>"; };
+		E88813CC248D257500F1E7AD /* demo.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.GIF; sourceTree = "<group>"; };
+		E8B366B6248828720027F2E2 /* ChangeARModeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeARModeButton.swift; sourceTree = "<group>"; };
+		E8DBB2F02486C27200309C06 /* Lluna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lluna.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8DBB2F32486C27200309C06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8DBB2F52486C27200309C06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E8DBB2FC2486C27300309C06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8DBB2FF2486C27300309C06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8DBB3012486C27300309C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8DBB30B2486C3F000309C06 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		E8DBB30C2486C3F000309C06 /* WalkthroughViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkthroughViewController.xib; sourceTree = "<group>"; };
+		E8DBB3142486C55800309C06 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E8DBB31A2486C69E00309C06 /* PermissionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionCardView.swift; sourceTree = "<group>"; };
+		E8DBB31C2486C6F200309C06 /* PermissionCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionCardView.xib; sourceTree = "<group>"; };
+		E8EA5F212486C9980004F071 /* LlunaPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LlunaPermissions.swift; sourceTree = "<group>"; };
+		E8EA5F242486CCF20004F071 /* UIVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIew.swift; sourceTree = "<group>"; };
+		E8F9D1662489698400DED109 /* LlunaScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LlunaScene.swift; sourceTree = "<group>"; };
+		E8F9D16E24896FE900DED109 /* Moon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8DBB2ED2486C27200309C06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E81583E824882239000852F4 /* AR Camera */ = {
+			isa = PBXGroup;
+			children = (
+				E81583ED24882296000852F4 /* CameraViewConfigurator.swift */,
+				E81583EA24882245000852F4 /* Contract */,
+				E81583EF24882301000852F4 /* CameraViewController.swift */,
+				E81583F32488234F000852F4 /* CameraPresenter.swift */,
+				E81583E924882243000852F4 /* UI */,
+			);
+			path = "AR Camera";
+			sourceTree = "<group>";
+		};
+		E81583E924882243000852F4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E81583F024882301000852F4 /* CameraViewController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E81583EA24882245000852F4 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				E81583EB2488224F000852F4 /* CameraContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		E8383DF42488BEE30027BFB0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E8383DF52488BEEF0027BFB0 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E83D2E88248BA1CD0086D0B1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E83D2E89248BA1FE0086D0B1 /* DetailViewController.swift */,
+				E83D2E8D248BA2020086D0B1 /* UI */,
+				E88813C5248CF7C200F1E7AD /* AstronomyRequest.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		E83D2E8D248BA2020086D0B1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E83D2E8A248BA1FE0086D0B1 /* DetailViewController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E83D2E8E248BA25A0086D0B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E83D2EA4248BA8510086D0B1 /* Location */,
+				E83D2E9D248BA54C0086D0B1 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E83D2E8F248BA25E0086D0B1 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E83D2E90248BA3040086D0B1 /* NetworkWrapper.swift */,
+				E83D2E92248BA30F0086D0B1 /* NetworkManager.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		E83D2E94248BA3120086D0B1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E83D2E97248BA35B0086D0B1 /* Location.swift */,
+				E83D2E99248BA36E0086D0B1 /* Astronomy.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E83D2E9D248BA54C0086D0B1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E83D2E9B248BA3CC0086D0B1 /* NetworkConstants.swift */,
+				E83D2E9E248BA5F10086D0B1 /* Astronomy Network Service */,
+				E83D2E8F248BA25E0086D0B1 /* Network Manager */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E83D2E9E248BA5F10086D0B1 /* Astronomy Network Service */ = {
+			isa = PBXGroup;
+			children = (
+				E83D2E9F248BA61F0086D0B1 /* AstronomyNetworkProtocol.swift */,
+				E83D2EA1248BA6420086D0B1 /* AstronomyNetworkService.swift */,
+			);
+			path = "Astronomy Network Service";
+			sourceTree = "<group>";
+		};
+		E83D2EA4248BA8510086D0B1 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				E88813C2248CDBCE00F1E7AD /* Location Manager */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		E87E6ABF248826A800BCE5A6 /* Reusable View */ = {
+			isa = PBXGroup;
+			children = (
+				E8B366B52488285C0027F2E2 /* Change AR Mode Button */,
+				E87E6AC2248826BD00BCE5A6 /* Camera */,
+			);
+			path = "Reusable View";
+			sourceTree = "<group>";
+		};
+		E87E6AC2248826BD00BCE5A6 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				E8F9D16D24896FDE00DED109 /* Nodes */,
+				E87E6AC0248826BB00BCE5A6 /* CameraARView.swift */,
+				E8F9D1662489698400DED109 /* LlunaScene.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		E88813C2248CDBCE00F1E7AD /* Location Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E88813C0248CDB8300F1E7AD /* LocationWrapper.swift */,
+				E88813C3248CDBE600F1E7AD /* LocationManager.swift */,
+			);
+			path = "Location Manager";
+			sourceTree = "<group>";
+		};
+		E88813C9248D191300F1E7AD /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				E88813CA248D249F00F1E7AD /* ic_lluna_logo.png */,
+				E88813CC248D257500F1E7AD /* demo.GIF */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		E8B366B52488285C0027F2E2 /* Change AR Mode Button */ = {
+			isa = PBXGroup;
+			children = (
+				E8B366B6248828720027F2E2 /* ChangeARModeButton.swift */,
+			);
+			path = "Change AR Mode Button";
+			sourceTree = "<group>";
+		};
+		E8DBB2E72486C27200309C06 = {
+			isa = PBXGroup;
+			children = (
+				E88813C9248D191300F1E7AD /* assets */,
+				E88813C7248D0FFA00F1E7AD /* README.md */,
+				E8DBB2F22486C27200309C06 /* Lluna */,
+				E8DBB2F12486C27200309C06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8DBB2F12486C27200309C06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8DBB2F02486C27200309C06 /* Lluna.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8DBB2F22486C27200309C06 /* Lluna */ = {
+			isa = PBXGroup;
+			children = (
+				E8DBB2F32486C27200309C06 /* AppDelegate.swift */,
+				E8DBB2F52486C27200309C06 /* SceneDelegate.swift */,
+				E83D2E94248BA3120086D0B1 /* Domain */,
+				E83D2E8E248BA25A0086D0B1 /* Services */,
+				E87E6ABF248826A800BCE5A6 /* Reusable View */,
+				E8DBB3132486C54B00309C06 /* Extensions */,
+				E8DBB3082486C2FC00309C06 /* Use Cases */,
+				E8DBB3072486C2DC00309C06 /* Resources */,
+			);
+			path = Lluna;
+			sourceTree = "<group>";
+		};
+		E8DBB3072486C2DC00309C06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E8DBB2FC2486C27300309C06 /* Assets.xcassets */,
+				E8DBB2FE2486C27300309C06 /* LaunchScreen.storyboard */,
+				E8DBB3012486C27300309C06 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E8DBB3082486C2FC00309C06 /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				E8383DF42488BEE30027BFB0 /* Base */,
+				E83D2E88248BA1CD0086D0B1 /* Detail */,
+				E81583E824882239000852F4 /* AR Camera */,
+				E8DBB3092486C33100309C06 /* Walkthrough */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		E8DBB3092486C33100309C06 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				E8DBB3162486C67600309C06 /* Card */,
+				E8DBB30B2486C3F000309C06 /* WalkthroughViewController.swift */,
+				E8DBB30A2486C3D600309C06 /* UI */,
+			);
+			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		E8DBB30A2486C3D600309C06 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E8DBB30C2486C3F000309C06 /* WalkthroughViewController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E8DBB3132486C54B00309C06 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E8DBB3142486C55800309C06 /* UIColor.swift */,
+				E8EA5F242486CCF20004F071 /* UIVIew.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E8DBB3162486C67600309C06 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				E8EA5F212486C9980004F071 /* LlunaPermissions.swift */,
+				E8DBB3172486C67900309C06 /* PermissionCard */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		E8DBB3172486C67900309C06 /* PermissionCard */ = {
+			isa = PBXGroup;
+			children = (
+				E8DBB31A2486C69E00309C06 /* PermissionCardView.swift */,
+				E8DBB31E2486C6F500309C06 /* UI */,
+			);
+			path = PermissionCard;
+			sourceTree = "<group>";
+		};
+		E8DBB31E2486C6F500309C06 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E8DBB31C2486C6F200309C06 /* PermissionCardView.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E8F9D16D24896FDE00DED109 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				E8F9D16E24896FE900DED109 /* Moon.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8DBB2EF2486C27200309C06 /* Lluna */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8DBB3042486C27300309C06 /* Build configuration list for PBXNativeTarget "Lluna" */;
+			buildPhases = (
+				E8DBB2EC2486C27200309C06 /* Sources */,
+				E8DBB2ED2486C27200309C06 /* Frameworks */,
+				E8DBB2EE2486C27200309C06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lluna;
+			productName = Lluna;
+			productReference = E8DBB2F02486C27200309C06 /* Lluna.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8DBB2E82486C27200309C06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = com.sfresneda.app;
+				TargetAttributes = {
+					E8DBB2EF2486C27200309C06 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = E8DBB2EB2486C27200309C06 /* Build configuration list for PBXProject "Lluna" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8DBB2E72486C27200309C06;
+			productRefGroup = E8DBB2F12486C27200309C06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8DBB2EF2486C27200309C06 /* Lluna */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8DBB2EE2486C27200309C06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8DBB3002486C27300309C06 /* LaunchScreen.storyboard in Resources */,
+				E88813CB248D249F00F1E7AD /* ic_lluna_logo.png in Resources */,
+				E83D2E8C248BA1FE0086D0B1 /* DetailViewController.xib in Resources */,
+				E8DBB31D2486C6F200309C06 /* PermissionCardView.xib in Resources */,
+				E88813C8248D0FFA00F1E7AD /* README.md in Resources */,
+				E8DBB30E2486C3F000309C06 /* WalkthroughViewController.xib in Resources */,
+				E88813CD248D257500F1E7AD /* demo.GIF in Resources */,
+				E8DBB2FD2486C27300309C06 /* Assets.xcassets in Resources */,
+				E81583F224882301000852F4 /* CameraViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8DBB2EC2486C27200309C06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E83D2E93248BA30F0086D0B1 /* NetworkManager.swift in Sources */,
+				E8EA5F252486CCF20004F071 /* UIVIew.swift in Sources */,
+				E88813C1248CDB8300F1E7AD /* LocationWrapper.swift in Sources */,
+				E83D2E8B248BA1FE0086D0B1 /* DetailViewController.swift in Sources */,
+				E8B366B7248828720027F2E2 /* ChangeARModeButton.swift in Sources */,
+				E83D2E9A248BA36E0086D0B1 /* Astronomy.swift in Sources */,
+				E81583F124882301000852F4 /* CameraViewController.swift in Sources */,
+				E81583F42488234F000852F4 /* CameraPresenter.swift in Sources */,
+				E87E6AC1248826BB00BCE5A6 /* CameraARView.swift in Sources */,
+				E8383DF62488BEEF0027BFB0 /* BaseViewController.swift in Sources */,
+				E88813C6248CF7C200F1E7AD /* AstronomyRequest.swift in Sources */,
+				E83D2EA0248BA61F0086D0B1 /* AstronomyNetworkProtocol.swift in Sources */,
+				E8DBB30D2486C3F000309C06 /* WalkthroughViewController.swift in Sources */,
+				E88813C4248CDBE600F1E7AD /* LocationManager.swift in Sources */,
+				E8DBB3152486C55800309C06 /* UIColor.swift in Sources */,
+				E8F9D1672489698400DED109 /* LlunaScene.swift in Sources */,
+				E8DBB2F42486C27200309C06 /* AppDelegate.swift in Sources */,
+				E81583EE24882296000852F4 /* CameraViewConfigurator.swift in Sources */,
+				E83D2E98248BA35B0086D0B1 /* Location.swift in Sources */,
+				E8DBB2F62486C27200309C06 /* SceneDelegate.swift in Sources */,
+				E8EA5F222486C9980004F071 /* LlunaPermissions.swift in Sources */,
+				E81583EC2488224F000852F4 /* CameraContract.swift in Sources */,
+				E8F9D16F24896FE900DED109 /* Moon.swift in Sources */,
+				E83D2E91248BA3040086D0B1 /* NetworkWrapper.swift in Sources */,
+				E8DBB31B2486C69E00309C06 /* PermissionCardView.swift in Sources */,
+				E83D2E9C248BA3CC0086D0B1 /* NetworkConstants.swift in Sources */,
+				E83D2EA2248BA6420086D0B1 /* AstronomyNetworkService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8DBB2FE2486C27300309C06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8DBB2FF2486C27300309C06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8DBB3022486C27300309C06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8DBB3032486C27300309C06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8DBB3052486C27300309C06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KPG2WB6U3;
+				INFOPLIST_FILE = Lluna/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergio-Fresneda.Lluna";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8DBB3062486C27300309C06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KPG2WB6U3;
+				INFOPLIST_FILE = Lluna/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergio-Fresneda.Lluna";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8DBB2EB2486C27200309C06 /* Build configuration list for PBXProject "Lluna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8DBB3022486C27300309C06 /* Debug */,
+				E8DBB3032486C27300309C06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8DBB3042486C27300309C06 /* Build configuration list for PBXNativeTarget "Lluna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8DBB3052486C27300309C06 /* Debug */,
+				E8DBB3062486C27300309C06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8DBB2E82486C27200309C06 /* Project object */;
+}

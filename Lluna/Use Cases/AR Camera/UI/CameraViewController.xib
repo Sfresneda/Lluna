@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraViewController" customModule="Lluna" customModuleProvider="target">
+            <connections>
+                <outlet property="changeAnimationButton" destination="8zu-dI-kgM" id="PEA-Ov-Uk6"/>
+                <outlet property="changeAnimationIndicatorContainerView" destination="7Aq-7G-tjY" id="5qS-Oe-R1J"/>
+                <outlet property="changeAnimationIndicatorLabel" destination="jtI-f4-Kdg" id="5GZ-f7-9Tc"/>
+                <outlet property="noPermissionButton" destination="rJV-cP-emI" id="kob-UG-jvG"/>
+                <outlet property="noPermissionLabel" destination="frN-bp-sez" id="WQr-2m-kfv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no_permission_allowed_label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frN-bp-sez">
+                    <rect key="frame" x="103.5" y="371" width="207" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJV-cP-emI">
+                    <rect key="frame" x="91" y="432" width="232" height="32"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <state key="normal" title="no_permission_allowed_button"/>
+                    <connections>
+                        <action selector="checkInSettingsButtonPressed:" destination="-1" eventType="touchUpInside" id="K0I-gF-FjH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zu-dI-kgM" customClass="ChangeARModeButton" customModule="Lluna" customModuleProvider="target">
+                    <rect key="frame" x="182" y="751" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="8zu-dI-kgM" secondAttribute="height" multiplier="1:1" id="Dg9-W0-WNe"/>
+                        <constraint firstAttribute="width" constant="50" id="cL9-L8-cP2"/>
+                    </constraints>
+                    <state key="normal" title="change_animation_button"/>
+                    <connections>
+                        <action selector="changeModeButtonPressed:" destination="-1" eventType="touchUpInside" id="4ex-cb-uU7"/>
+                    </connections>
+                </button>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Aq-7G-tjY">
+                    <rect key="frame" x="107" y="811" width="200" height="31"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Fwz-A9-Gck">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="31"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mode_indicator_label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtI-f4-Kdg">
+                                <rect key="frame" x="20" y="5" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jtI-f4-Kdg" secondAttribute="trailing" constant="20" id="FzJ-E4-uFd"/>
+                            <constraint firstItem="jtI-f4-Kdg" firstAttribute="top" secondItem="Fwz-A9-Gck" secondAttribute="top" constant="5" id="KgL-eT-tSr"/>
+                            <constraint firstItem="jtI-f4-Kdg" firstAttribute="leading" secondItem="Fwz-A9-Gck" secondAttribute="leading" constant="20" id="Whx-p0-2YE"/>
+                            <constraint firstItem="jtI-f4-Kdg" firstAttribute="centerX" secondItem="Fwz-A9-Gck" secondAttribute="centerX" id="f5F-Xa-Rfy"/>
+                            <constraint firstAttribute="bottom" secondItem="jtI-f4-Kdg" secondAttribute="bottom" constant="5" id="hep-yf-4ml"/>
+                            <constraint firstItem="jtI-f4-Kdg" firstAttribute="centerY" secondItem="Fwz-A9-Gck" secondAttribute="centerY" id="lOI-TP-4Vr"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="frN-bp-sez" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="DY1-kw-oNZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7Aq-7G-tjY" secondAttribute="bottom" constant="20" id="GBE-TP-Abo"/>
+                <constraint firstItem="rJV-cP-emI" firstAttribute="top" secondItem="frN-bp-sez" secondAttribute="bottom" constant="20" id="IbM-sO-Y5J"/>
+                <constraint firstItem="7Aq-7G-tjY" firstAttribute="top" secondItem="8zu-dI-kgM" secondAttribute="bottom" constant="10" id="Mgv-iN-SWd"/>
+                <constraint firstItem="rJV-cP-emI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Qn1-GW-ohH"/>
+                <constraint firstItem="frN-bp-sez" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RCd-xK-rWQ"/>
+                <constraint firstItem="frN-bp-sez" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="WXS-fh-pbJ"/>
+                <constraint firstItem="7Aq-7G-tjY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="XQu-rf-l0W"/>
+                <constraint firstItem="rJV-cP-emI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="e0J-yi-7b7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rJV-cP-emI" secondAttribute="trailing" constant="20" id="hHj-r5-ahT"/>
+                <constraint firstItem="8zu-dI-kgM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="odM-p0-pbR"/>
+                <constraint firstItem="rJV-cP-emI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qS9-oo-9RK"/>
+                <constraint firstItem="7Aq-7G-tjY" firstAttribute="centerX" secondItem="8zu-dI-kgM" secondAttribute="centerX" id="tEx-ad-H6c"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="frN-bp-sez" secondAttribute="trailing" constant="20" id="yUS-2y-hvS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7Aq-7G-tjY" secondAttribute="trailing" constant="20" id="yVj-PS-qGN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
+        </view>
+    </objects>
+</document>
