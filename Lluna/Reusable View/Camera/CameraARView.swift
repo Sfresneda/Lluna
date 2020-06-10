@@ -11,7 +11,7 @@ import AVFoundation
 import ARKit
 
 protocol CameraARViewDelegate {
-    func moonInOnScene()
+    func moonIsOnScene()
     func moonTouched()
     func showMessageError(with message: String)
 }
@@ -99,7 +99,7 @@ extension CameraARView: ARSCNViewDelegate {
         node.addChildNode(planeNode)
         self.llunaScene?.insertMoon()
         
-        self.delegate?.moonInOnScene()
+        self.delegate?.moonIsOnScene()
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {

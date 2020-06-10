@@ -143,10 +143,10 @@ extension LlunaScene: LlunaSceneContract {
             return
         }
         
-        let yOffset: CGFloat = 0.5
-        let position: SCNVector3 = SCNVector3.init(0.0 + yOffset,
+        let zOffset: CGFloat = 0.5
+        let position: SCNVector3 = SCNVector3.init(0.0,
                                                    0.0,
-                                                   0.0)
+                                                   0.0 - zOffset)
         
         self.moonNode = Moon.init()
         self.moonNode?.position = position

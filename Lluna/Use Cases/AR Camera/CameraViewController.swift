@@ -137,7 +137,7 @@ class CameraViewController: BaseViewController {
     
     private func changeAnimationModeButtonEnabledState() {
         DispatchQueue.main.async {
-            self.changeAnimationButton.isEnabled = !self.changeAnimationButton.isEnabled
+            self.changeAnimationButton.isEnabled = true
         }
     }
     
@@ -159,7 +159,7 @@ extension CameraViewController: CameraARViewDelegate {
         self.showError(with: content, acceptHandler: nil)
     }
     
-    func moonInOnScene() {
+    func moonIsOnScene() {
         self.changeAnimationModeButtonEnabledState()
         self.showAnimationIndicator(with: self.changeAnimationButton.mode.title)
     }
