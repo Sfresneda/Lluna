@@ -10,7 +10,7 @@ import UIKit
 import ARKit
 
 protocol LlunaSceneDelegate {
-    func moonTouched()
+    func moonTapped()
     func showError(with message: String)
 }
 
@@ -48,21 +48,6 @@ class LlunaScene: ARSCNView {
         self.commonSetup()
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard !touches.isEmpty else {
-            return
-        }
-        
-        if 1 == touches.count,
-            let touch = touches.first {
-            self.handleTap(touch)
-            
-        } else {
-            self.handleMultiTouch(touches)
-        }
-
-    }
-    
     // MARK: - Setup
     private func commonSetup() {
         guard ARWorldTrackingConfiguration.isSupported else {
@@ -74,6 +59,14 @@ class LlunaScene: ARSCNView {
         self.sessionConfig?.worldAlignment = .gravity
         self.sessionConfig?.planeDetection = .horizontal
         self.sessionConfig?.isLightEstimationEnabled = true
+        
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(handleTap(_:)))
+        let panGesture: UIPanGestureRecognizer = UIPanGestureRecognizer.init(target: self, action: #selector(handlePan(_:)))
+        let pinchGesture: UIPinchGestureRecognizer = UIPinchGestureRecognizer.init(target: self, action: #selector(handlePinch(_:)))
+        
+        self.addGestureRecognizer(tapGesture)
+        self.addGestureRecognizer(panGesture)
+        self.addGestureRecognizer(pinchGesture)
         
         self.scene.physicsWorld.gravity = SCNVector3Make(0, -400, 0)
         self.antialiasingMode = .multisampling4X
@@ -88,21 +81,47 @@ class LlunaScene: ARSCNView {
         self.session.run(worldSessionConfig, options: [.resetTracking, .removeExistingAnchors])
     }
     
-    // MARK: - Helper
-    private func handleTap(_ touch: UITouch) {
-        let touchPoint = touch.location(in: self)
-        
-        guard let result = self.hitTest(touchPoint, options: nil).first else {
+    // MARK: - Actions
+    @objc
+    private func handleTap(_ sender: UITapGestureRecognizer) {
+        guard nil != self.moonNode,
+            self.isGestureOnMoon(sender.location(in: self)) else {
             return
         }
         
-        if result.node == self.moonNode {
-            self.moonDelegate?.moonTouched()
-        }
+        self.moonDelegate?.moonTapped()
     }
     
-    private func handleMultiTouch(_ touches: Set<UITouch>) {
-        // do something with multi touch events
+    @objc
+    private func handlePan(_ sender: UIPanGestureRecognizer) {
+        guard let moon = self.moonNode,
+            self.isGestureOnMoon(sender.location(in: self)),
+            !moon.isRotating else {
+            return
+        }
+        
+        let translation = sender.translation(in: sender.view!)
+        var newAngleY = (Float)(translation.x)*(Float)(Double.pi)/180.0
+        newAngleY += moon.rotation.y
+
+        moon.eulerAngles.y = newAngleY
+
+        print(moon.eulerAngles)
+    }
+    
+    @objc
+    private func handlePinch(_ sender: UIPinchGestureRecognizer) {
+        guard nil != self.moonNode,
+            self.isGestureOnMoon(sender.location(in: self)) else {
+            return
+        }
+
+        print("pinch gesture: \(sender.state)")
+    }
+    
+    // MARK: - Helper
+    private func isGestureOnMoon(_ touchPoint: CGPoint) -> Bool {
+        return nil != self.hitTest(touchPoint, options: nil).first
     }
 }
 

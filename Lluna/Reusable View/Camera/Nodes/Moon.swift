@@ -10,6 +10,8 @@ import UIKit
 import ARKit
 
 protocol MoonContract: SCNNode {
+    var isRotating: Bool { get }
+    
     func startAnimation()
     func stopAnimation()
 }
@@ -18,6 +20,8 @@ class Moon: SCNNode {
 
     // MARK: - Vars
     private let rotateAnimationKey: String = "autoRotate"
+    
+    var isRotating: Bool = false
     
     // MARK: - Lifecycle
     override init() {
@@ -71,6 +75,8 @@ extension Moon: MoonContract {
         
         let rotateAnimation = self.autoRotationAnimation(100)
         self.addAnimation(rotateAnimation, forKey: self.rotateAnimationKey)
+        
+        self.isRotating = true
     }
     
     func stopAnimation() {
@@ -80,6 +86,8 @@ extension Moon: MoonContract {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.removeAllAnimations()
         }
+        
+        self.isRotating = false
     }
 }
 

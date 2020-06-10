@@ -77,7 +77,7 @@ extension CameraARView: LlunaSceneDelegate {
         self.delegate?.showMessageError(with: message)
     }
     
-    func moonTouched() {
+    func moonTapped() {
         self.delegate?.moonTouched()
     }
     
