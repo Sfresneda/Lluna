@@ -53,10 +53,10 @@ class CameraViewController: BaseViewController {
         self.noPermissionButton.backgroundColor = UIColor.dirtBlueGrayVlv
         self.noPermissionButton.layer.cornerRadius = self.noPermissionButton.bounds.height * 0.5
         self.noPermissionButton.clipsToBounds = true
-        self.noPermissionButton.titleEdgeInsets = .init(top: 5.0,
-                                                        left: 10.0,
-                                                        bottom: 5.0,
-                                                        right: 10.0)
+        self.noPermissionButton.contentEdgeInsets = .init(top: 5.0,
+                                                          left: 10.0,
+                                                          bottom: 5.0,
+                                                          right: 10.0)
         
         self.changeAnimationButton.setTitle(nil, for: .normal)
         self.changeAnimationButton.backgroundColor = UIColor.dirtBlueGrayVlv
