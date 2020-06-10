@@ -105,18 +105,25 @@ class LlunaScene: ARSCNView {
         newAngleY += moon.rotation.y
 
         moon.eulerAngles.y = newAngleY
-
-        print(moon.eulerAngles)
     }
     
     @objc
     private func handlePinch(_ sender: UIPinchGestureRecognizer) {
-        guard nil != self.moonNode,
+        guard let moon = self.moonNode,
             self.isGestureOnMoon(sender.location(in: self)) else {
             return
         }
 
-        print("pinch gesture: \(sender.state)")
+        if (.changed == sender.state) {
+            let xScale = Float(sender.scale) * moon.scale.x
+            let yScale =  Float(sender.scale) * moon.scale.y
+            let zScale =  Float(sender.scale) * moon.scale.z
+
+            moon.scale = SCNVector3(x: Float(xScale),
+                                    y: Float(yScale),
+                                    z: Float(zScale))
+            sender.scale = 1
+        }
     }
     
     // MARK: - Helper
