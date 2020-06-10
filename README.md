@@ -5,6 +5,9 @@
 --------------------
 Created for AppleJam Hackathon [__more info__](https://discord.com/channels/710223508382416976)
 
+### New Features 🎉 (06/10/2020)
+- Now the user can change the rotation and moon scale with gestures (Pan and Pinch gestures)
+
 #### Name's origin
 In [Valencian](https://en.wikipedia.org/wiki/Valencian_language) (_my native language_), Lluna (_/ˈʎu.na/_) means moon. Here, in Valencia, is common talk about:
  > A la Lluna de Valencia
